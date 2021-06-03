@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Cartrack App</string>
+
+    <string name="search">Search</string>
+    <string name="title">Title:</string>
+    <string name="year">Year:</string>
+    <string name="rated">Rated:</string>
+    <string name="released">Released:</string>
+    <string name="runtime">Runtime:</string>
+    <string name="language">Language:</string>
+    <string name="country">Country:</string>
+    <string name="saved_list">Saved List</string>
+    <string name="status_message">No data saved in local database</string>
+
+    <string-array name="category">
+        <item>Please select</item>
+        <item>Movie</item>
+        <item>Series</item>
+    </string-array>
+</resources>

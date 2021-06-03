@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/omdb_nav_graph"
+    app:startDestination="@id/searchOmdbFragment">
+
+    <fragment
+        android:id="@+id/searchOmdbFragment"
+        android:name="co.cartrack.za.view.fragment.SearchOmdbFragment"
+        android:label="SearchOmdbFragment" >
+        <action
+            android:id="@+id/action_searchOmdbFragment_to_omdbItemFragment"
+            app:destination="@id/omdbItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedOmdbFragment"
+        android:name="co.cartrack.za.view.fragment.SavedOmdbFragment"
+        android:label="fragment_saved_omdb"
+        tools:layout="@layout/fragment_saved_omdb" >
+        <action
+            android:id="@+id/action_savedOmdbFragment_to_omdbItemFragment"
+            app:destination="@id/omdbItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/omdbItemFragment"
+        android:name="co.cartrack.za.view.fragment.OmdbItemFragment"
+        android:label="fragment_item_layout"
+        tools:layout="@layout/fragment_item_layout" >
+        <argument
+            android:name="search"
+            app:argType="co.cartrack.za.model.Search" />
+    </fragment>
+</navigation>
